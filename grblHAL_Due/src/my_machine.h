@@ -23,12 +23,15 @@
 // If none is enabled pin mappings from generic_map.h will be used
 // NOTE: Only one board may be enabled!
 //#define BOARD_TINYG2_DUE
-#define BOARD_RAMPS_16
+//#define BOARD_RAMPS_16
 //#define BOARD_MEGA256
 //#define BOARD_PROTONEER
 //#define BOARD_CMCGRATH
 //#define BOARD_RADDS_16   // NOTE: untested!!
-//#define BOARD_MY_MACHINE // Add my_machine_map.h before enabling this!
+// *****************************
+// this is for RAMPS-FD v1 Rev A
+#define BOARD_MY_MACHINE // Add my_machine_map.h before enabling this!
+//******************************
 
 // Configuration
 // Uncomment to enable.
@@ -38,5 +41,4 @@
 //#define KEYPAD_ENABLE      1 // I2C keypad for jogging etc., requires keypad plugin.
 //#define EEPROM_ENABLE      1 // I2C EEPROM support. Set to 1 for 24LC16(2K), 2 for larger sizes. Requires eeprom plugin.
 //#define EEPROM_IS_FRAM     1 // Uncomment when EEPROM is enabled and chip is FRAM, this to remove write delay.
-
 /**/
